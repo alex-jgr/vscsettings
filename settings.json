@@ -1,0 +1,206 @@
+{
+    "workbench.colorTheme": "Kane",
+    "workbench.iconTheme": "vscode-great-icons",
+    "terminal.integrated.letterSpacing": 1.5,
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.fontWeight": 200,
+    "terminal.integrated.fontSize": 14,
+    "debug.console.fontSize": 13,
+    "chat.editor.fontSize": 13,
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#5eff00",
+        "[Kane]": {
+            "editor.background": "#05010e",
+            "editor.foreground": "#b3b3b3",
+            "editor.selectionHighlightBackground": "#181818c9",
+            "editor.findMatchHighlightBackground": "#1b1b1bc9",
+            "editor.findMatchHighlightForeground": "#ffffffc9",
+            "sideBar.background": "#06000f",
+            "sideBar.border": "#2e2e2e",
+            "sideBar.foreground": "#b1b1b1",
+            "sideBar.dropBackground": "#2e2e2e",
+            "sideBarStickyScroll.shadow": "#2e2e2e",
+            "sideBarStickyScroll.border": "#2e2e2e",
+            "sideBarSectionHeader.background": "#0e0e0e",
+            "sideBarTitle.border": "#2e2e2e",
+            "sideBarTitle.background":"#0e0e0e",
+            "search.resultsInfoForeground": "#808080",
+            "inputOption.activeBorder": "#264f78",
+            "input.placeholderForeground": "#808080",
+            "input.foreground": "#ffffff",
+            "input.background": "#0e0e0e",
+            "input.border": "#2e2e2e",
+            "activityBar.border": "#4d4d4d00",
+            "activityBar.background": "#0e0e0e",
+            "menubar.selectionBackground": "#4d4d4d00",
+            "menubar.selectionForeground": "#ffffff",
+            "statusBar.background": "#0e0e0e",
+            "statusBar.border": "#2e2e2e",
+            "statusBar.foreground": "#808080",
+            "titleBar.activeBackground": "#0e0e0e",
+            "titleBar.activeForeground": "#808080",
+            "titleBar.border": "#2e2e2e",
+            "tab.activeBackground": "#030108",
+            "tab.activeForeground": "#ffffff",
+            "tab.border": "#2e2e2e",
+            "tab.inactiveBackground": "#1d1d1d",
+            "tab.inactiveForeground": "#808080",
+            "tab.hoverBackground": "#1e1e1e"
+        }
+    },
+    "files.eol": "\n",
+    "stylelint.customSyntax": "postcss-scss",
+    "stylelint.validate": [
+        "eol",
+        "postcss",
+        "scss"
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+
+    "editor.minimap.renderCharacters": false,
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.guides.indentation": false,
+    "editor.letterSpacing": 0.5,
+
+    "editor.tabSize": 2,
+    "editor.fontSize": 12,
+    "editor.lineHeight": 18,
+    "editor.fontWeight": 400,
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+
+    "editor.minimap.sectionHeaderLetterSpacing": 1.5,
+
+    "editor.tokenColorCustomizations": {
+        "[Kane]":{
+            "keywords": "#c74900",
+            "strings": "#ae00c5",
+            "types": "#d6d303",
+            "functions": "#d6d303",
+            "variables": "#2571ff",
+            
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword.operator"
+                    ],
+                    "settings": {
+                        "foreground": "#da4500"
+                    }
+                },
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "foreground": "#00c3ff",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.tag.html",
+                        "punctuation.definition.tag.begin.html",
+                        "punctuation.definition.tag.end.html"
+                    ],
+                    "settings": {
+                        "foreground": "#e100ff",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "Regular HTML Attributes (general rule - comes first)",
+                    "scope": [
+                        "entity.other.attribute-name.html",
+                        "meta.attribute.unrecognized.aria-label.html entity.other.attribute-name.html",
+                        "meta.attribute.unrecognized.aria-current.html entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "foreground": "#9c6b00",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Lit Property Bindings (specific rule - overrides general)",
+                    "scope": [
+                        "meta.attribute.unrecognized entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "foreground": "#e48dff"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.object.property",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#5993ff",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "storage.modifier.ts",
+                    "settings": {
+                        "foreground": "#d42a00",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "CSS Class and Support - Property Name",
+                    "scope": [
+                        "source.css support.type.property-name",
+                        "source.sass support.type.property-name",
+                        "source.scss support.type.property-name",
+                        "source.less support.type.property-name",
+                        "source.stylus support.type.property-name",
+                        "source.postcss support.type.property-name"
+                    ],
+                    "settings": {
+                    "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "name": "CSS Class and Support - Property Value",
+                    "scope": [
+                        "source.css support.type.property-value",
+                        "source.sass support.type.property-value",
+                        "source.scss support.type.property-value",
+                        "source.less support.type.property-value",
+                        "source.stylus support.type.property-value",
+                        "source.postcss support.type.property-value"
+                    ],
+                    "settings": {
+                    "foreground": "#CE9178"
+                    }
+                },
+                {
+                    "name": "CSS Class and Support - Class",
+                    "scope": [
+                        "source.css entity.other.attribute-name.class.css",
+                        "source.sass entity.other.attribute-name.class.css",
+                        "source.scss entity.other.attribute-name.class.css",
+                        "source.less entity.other.attribute-name.class.css",
+                        "source.stylus entity.other.attribute-name.class.css",
+                        "source.postcss entity.other.attribute-name.class.css"
+                    ],
+                    "settings": {
+                    "foreground": "#ff7b00"
+                    }
+                },
+                {
+                    "name": "CSS Class and Support - Id",
+                    "scope": [
+                        "source.css entity.other.attribute-name.id.css",
+                        "source.sass entity.other.attribute-name.id.css",
+                        "source.scss entity.other.attribute-name.id.css",
+                        "source.less entity.other.attribute-name.id.css",
+                        "source.stylus entity.other.attribute-name.id.css",
+                        "source.postcss entity.other.attribute-name.id.css"
+                    ],
+                    "settings": {
+                    "foreground": "#ff00bf"
+                    }
+                }
+            ]
+        }
+    }
+}
